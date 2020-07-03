@@ -12,6 +12,7 @@ docker run -d \
     --restart always \
     --net host \
     -v $HOME/ssl:/etc/nginx/ssl/ \
+    -v $HOME/letsencrypt:/etc/nginx/letsencrypt/ \
     defunctzombie/localtunnel-nginx:latest
 ```
 
